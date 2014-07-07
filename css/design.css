@@ -1,0 +1,378 @@
+html
+{
+	height: 100%;
+}
+
+body
+{
+	height: 100%;
+	margin: 0;
+	font-family: 'fira', 'Trebuchet MS', sans-serif;
+	background: url("assets/img/rbw.png") repeat-y 30px 0px, url("assets/img/background.jpg");
+}
+
+.nota-bene
+{
+	font-size: 0.8em;
+	font-style: italic;
+}
+
+/*
+ * Header
+ */
+
+header
+{
+	height: 100%; !important
+	position: relative;
+}
+
+#header-content
+{
+	color: black;
+	text-align: center;
+	background: #FFFFF5;
+	z-index: 10;
+	width: 100%;
+	height: 100%; 
+	position: absolute;
+	top: 0; 
+	bottom: 0;
+}
+
+#titre
+{
+	font-family: "Helvetica Neue", Helvetica, sans-serif;
+	font-weight: lighter;
+	font-size: 130px;
+	margin-top: 10%;
+	text-transform: uppercase;
+}
+
+#desc
+{
+	font-size: 2em;
+	margin-top: -30px;
+}
+
+#header-nav
+{
+	width: 100%;
+	text-align: center;
+	list-style-type: none;
+	position: absolute;
+	bottom: 0;
+	background: rgba(0.2, 0.2, 0.2, 0);
+}
+
+#header-nav li
+{
+	display: inline-block;
+	margin: 0 1.2em;
+}
+
+#header-nav li a
+{
+	color: black;
+	text-decoration: none;
+	font-size: 1.2em;
+}
+
+#header-nav li a:hover
+{
+	text-decoration: underline;
+}
+
+/*
+ * Navigation
+ */
+
+nav
+{
+	width: 100%;
+	z-index: 2;
+	position: fixed;
+	top: 0;
+	height: 60px;
+	background: #322f38;
+	box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.8);
+}
+
+nav ul
+{
+	text-align: right;
+	list-style-type: none;
+}
+
+nav ul li
+{
+	display: inline-block;
+	margin: 0 1.2em;
+}
+
+nav ul li a, nav #accueil a
+{
+	color: white;
+	text-decoration: none;
+	font-size: 1.2em;
+}
+
+nav ul li a:hover, nav #accueil a:hover
+{
+	color: white;
+	text-decoration: underline;
+	font-size: 1.2em;
+}
+
+nav #accueil
+{
+	margin-top: 16px;
+	margin-left: 19px;
+}
+
+/*
+ * Sections
+ */
+
+section
+{
+	color: white;
+	padding-top: 70px;
+	padding-left: 200px;
+	padding-right: 25px;
+	min-height: 100%;
+	max-width: 100%;
+	font-size: 1.2em;
+}
+
+section p
+{
+	text-align: justify;
+}
+
+section a
+{
+	text-decoration: none;
+	color: #AAA;
+}
+
+section a:hover
+{
+	color: #888;
+}
+
+.section-titre
+{
+	font-size: 1.5em;
+}
+
+.figure-centree
+{
+	text-align: center;	
+}
+
+.sous-section-titre
+{
+	margin-left: 1.3em;
+}
+
+.sous-titre
+{
+	margin-top: -15px;
+	margin-left: 1em;
+	font-style: italic;
+	font-weight: lighter;
+}
+
+/*
+ * Footer
+ */
+
+footer
+{
+	background: #322f38;
+	text-align: center;
+	padding: 3px;
+	margin-top: -16px;
+	margin-bottom: -16px;
+	color: white;
+}
+
+footer a
+{
+	text-decoration: none;
+	color: #AAA;
+}
+
+footer a:hover
+{
+	color: #888;
+}
+
+/*
+ * Rollover
+ */
+
+.rollover
+{
+	color: #AAA;
+	display: inline-block;
+}
+
+.rollover:hover
+{
+	color: #888;
+}
+
+.rollover .rollover-content
+{
+	margin-top: 1em;
+	padding: 4px;
+	text-align: center;
+	background: white;
+	color: #555;
+	display: none;
+	position: absolute;
+	border-radius: 3px;
+	box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.9) inset;
+}
+
+.rollover:hover .rollover-content, .rollover:focus .rollover-content
+{
+	display: inline;
+}
+
+/*
+ * Salons
+ */
+
+.liste-salons
+{
+	list-style-type: none;
+	text-align: center;
+}
+
+.liste-salons li
+{
+	margin-bottom: 4px;
+	display: inline-block;
+	-webkit-transition: all 0.3s ease-in-out;
+	-moz-transition: all 0.3s ease-in-out;
+	-o-transition: all 0.3s ease-in-out;
+	-ms-transition: all 0.3s ease-in-out;
+	transition: all 0.3s ease-in-out;
+	box-shadow: none;
+}
+
+.liste-salons li:hover
+{
+	box-shadow: 0px 0px 4px 4px rgba(0, 0, 0, 0.5);
+}
+
+.liste-salons li a
+{
+	color: black;
+	padding-top: 15px;
+	width: 900px;
+	height: 205px;
+	display: inline-block;
+}
+
+#salon-principal a
+{
+	background: url('assets/img/boutin.jpg') center -330px;
+	background-size: 1300px;
+}
+
+#salon-furry a
+{
+	background: url('assets/img/furry.png') center -100px;
+	background-size: 900px;
+}
+
+#salon-vege a
+{
+	background: url('assets/img/vege.png') center -100px;
+	background-size: 900px;
+}
+
+/*
+ * Pages salon
+ */
+
+#decorateur-salon
+{
+	margin: 0px;
+	margin-bottom: -7px;
+	position: fixed;
+	left: 0px;
+	bottom: 0px;
+}
+
+#decorateur-salon img
+{
+	max-width: 400px;
+}
+
+#decorateur-salon figcaption
+{
+	text-align: center;
+	color: white;
+	text-shadow: 0px 0px 3px black;
+}
+
+#nigga, #furry
+{
+	text-align: center;
+}
+
+#niggaimg
+{
+	margin: auto;
+	width: 800px;
+	height: 417px;
+	background: url('assets/img/nigga.jpg');
+	background-size: 800px 417px;
+}
+
+#niggaimg:hover
+{
+	background: url('assets/img/nigga_hud.png'), url('assets/img/nigga.jpg');
+	background-size: 800px 417px;
+}
+
+#furryimg
+{
+	margin: auto;
+	width: 900px;
+	height: 281px;
+	background: url('assets/img/membres.jpg');
+	background-size: 900px 281px;
+}
+
+#furryimg:hover
+{
+	background: url('assets/img/membres_hud.png'), url('assets/img/membres.jpg');
+	background-size: 900px 281px;
+}
+
+#nigga figcaption, #furry figcaption
+{
+	font-style: italic;
+}
+
+/*
+ * Fontes de caractère personalisées 
+ */
+
+@font-face
+{
+    font-family: 'fira';
+    src: url('assets/fonts/firaSansRegular/fira.eot') format('embedded-opentype'),
+url('assets/fonts/firaSansRegular/fira.woff') format('woff'),
+url('assets/fonts/firaSansRegular/fira.ttf') format('truetype'),
+url('assets/fonts/firaSansRegular/fira.otf') format('otf');
+    font-weight: normal;
+    font-style: normal;
+
+}
