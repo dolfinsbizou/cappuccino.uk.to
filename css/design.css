@@ -362,6 +362,50 @@ footer a:hover
 }
 
 /*
+ * Section broken
+ */
+
+#broken
+{
+	overflow: scroll;
+	color: white;
+	font-size: 1.2em;
+	position: fixed;
+	padding: 15px;
+	text-align: center;
+	top: 15%;
+	left: 15%;
+	right: 15%;
+	bottom: 15%;
+	z-index: 97;
+	background: #222;
+	border-radius: 10px;
+	/** box-shadow: 0px 0px 4px 2px white;/**/
+}
+
+#broken_back
+{
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	z-index: 96;
+	background: url('assets/broken/background.png');
+}
+
+#broken_front
+{
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	z-index: 98;
+	background: url('assets/broken/glass.png') no-repeat;
+}
+
+/*
  * Fontes de caractère personalisées 
  */
 
