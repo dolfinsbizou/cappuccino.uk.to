@@ -405,6 +405,17 @@ footer a:hover
 	background: url('assets/broken/glass.png') no-repeat;
 }
 
+#broken a
+{
+	text-decoration: none;
+	color: #AAA;
+}
+
+#broken a:hover
+{
+	color: #888;
+}
+
 /*
  * Fontes de caractère personalisées 
  */
